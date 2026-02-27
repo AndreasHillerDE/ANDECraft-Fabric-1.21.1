@@ -118,6 +118,60 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModItems.SAPPHIRE), conditionsFromItem(ModItems.SAPPHIRE))
                 .offerTo(exporter);
 
+        // Craft Red Diamond Axe
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.RED_DIAMOND_AXE)
+                .pattern("RR")
+                .pattern("RS")
+                .pattern(" S")
+                .input('S', Items.STICK)
+                .input('R', ModItems.RED_DIAMOND_INGOT)
+                .criterion(hasItem(ModItems.RED_DIAMOND_INGOT), conditionsFromItem(ModItems.RED_DIAMOND_INGOT))
+                .offerTo(exporter);
+
+        // Craft Red Diamond Pickaxe
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.RED_DIAMOND_PICKAXE)
+                .pattern("RRR")
+                .pattern(" S ")
+                .pattern(" S ")
+                .input('S', Items.STICK)
+                .input('R', ModItems.RED_DIAMOND_INGOT)
+                .criterion(hasItem(ModItems.RED_DIAMOND_INGOT), conditionsFromItem(ModItems.RED_DIAMOND_INGOT))
+                .offerTo(exporter);
+
+        // Craft Red Diamond Shovel
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.RED_DIAMOND_SHOVEL)
+                .pattern("R")
+                .pattern("S")
+                .pattern("S")
+                .input('S', Items.STICK)
+                .input('R', ModItems.RED_DIAMOND_INGOT)
+                .criterion(hasItem(ModItems.RED_DIAMOND_INGOT), conditionsFromItem(ModItems.RED_DIAMOND_INGOT))
+                .offerTo(exporter);
+
+        // Craft Red Diamond Hoe
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.RED_DIAMOND_HOE)
+                .pattern("RR")
+                .pattern(" S")
+                .pattern(" S")
+                .input('S', Items.STICK)
+                .input('R', ModItems.RED_DIAMOND_INGOT)
+                .criterion(hasItem(ModItems.RED_DIAMOND_INGOT), conditionsFromItem(ModItems.RED_DIAMOND_INGOT))
+                .offerTo(exporter);
+
+        // Craft Red Diamond Sword
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.RED_DIAMOND_SWORD)
+                .pattern("R")
+                .pattern("R")
+                .pattern("S")
+                .input('S', Items.STICK)
+                .input('R', ModItems.RED_DIAMOND_INGOT)
+                .criterion(hasItem(ModItems.RED_DIAMOND_INGOT), conditionsFromItem(ModItems.RED_DIAMOND_INGOT))
+                .offerTo(exporter);
+
+
+
+        // SHAPELESS RECIPES -------------------------------------------------------------------------------------------
+
         // Craft Red Diamond Ingot
         ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.RED_DIAMOND_INGOT, 9)
                 .input(ModBlocks.RED_DIAMOND_BLOCK)
@@ -146,6 +200,19 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.SAPPHIRE, 9)
                 .input(ModBlocks.SAPPHIRE_BLOCK)
                 .criterion(hasItem(ModBlocks.SAPPHIRE_BLOCK),  conditionsFromItem(ModBlocks.SAPPHIRE_BLOCK))
+                .offerTo(exporter);
+
+
+
+        // CONVERSION BALL RECIPES -------------------------------------------------------------------------------------
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, Items.DIAMOND, 1)
+                .pattern("CG")
+                .pattern("GG")
+                .pattern("G ")
+                .input('C', ModItems.CONVERSION_BALL)
+                .input('G', Items.GOLD_INGOT)
+                .criterion(hasItem(ModItems.CONVERSION_BALL), conditionsFromItem(ModItems.CONVERSION_BALL))
                 .offerTo(exporter);
     }
 }

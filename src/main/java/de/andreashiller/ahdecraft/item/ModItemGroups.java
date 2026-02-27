@@ -14,7 +14,7 @@ public class ModItemGroups {
 
     public static final ItemGroup AHDECraft_ITEM_GROUP = Registry.register(Registries.ITEM_GROUP,
             Identifier.of(AHDECraft.MOD_ID, "ahdecraft_item_group"),
-            FabricItemGroup.builder().icon(() -> new ItemStack(ModItems.CONVERSION_BALL))
+            FabricItemGroup.builder().icon(() -> new ItemStack(ModItems.RED_DIAMOND))
                     .displayName(Text.translatable("itemgroup.ahdecraft.ahdecraft_item_group"))
                     .entries((displayContext, entries) -> {
                         // Items
@@ -32,7 +32,7 @@ public class ModItemGroups {
 
     public static final ItemGroup AHDECraft_BLOCK_GROUP = Registry.register(Registries.ITEM_GROUP,
             Identifier.of(AHDECraft.MOD_ID, "ahdecraft_block_group"),
-            FabricItemGroup.builder().icon(() -> new ItemStack(ModBlocks.RED_DIAMOND_BLOCK))
+            FabricItemGroup.builder().icon(() -> new ItemStack(ModBlocks.RED_DIAMOND_ORE))
                     .displayName(Text.translatable("itemgroup.ahdecraft.ahdecraft_block_group"))
                     .entries((displayContext, entries) -> {
                         // Blocks
@@ -56,6 +56,25 @@ public class ModItemGroups {
                         entries.add(ModBlocks.SAPPHIRE_ORE);
                         entries.add(ModBlocks.SAPPHIRE_DEEPSLATE_ORE);
                         entries.add(ModBlocks.SAPPHIRE_NETHER_ORE);
+                    }).build());
+
+    public static final ItemGroup AHDECraft_TOOLS_GROUP = Registry.register(Registries.ITEM_GROUP,
+            Identifier.of(AHDECraft.MOD_ID, "ahdecraft_tools_group"),
+            FabricItemGroup.builder().icon(() -> new ItemStack(ModItems.RED_DIAMOND_PICKAXE))
+                    .displayName(Text.translatable("itemgroup.ahdecraft.ahdecraft_tools_group"))
+                    .entries((displayContext, entries) -> {
+                        entries.add(ModItems.RED_DIAMOND_AXE);
+                        entries.add(ModItems.RED_DIAMOND_PICKAXE);
+                        entries.add(ModItems.RED_DIAMOND_SHOVEL);
+                        entries.add(ModItems.RED_DIAMOND_HOE);
+                    }).build());
+
+    public static final ItemGroup AHDECraft_COMPAT_GROUP = Registry.register(Registries.ITEM_GROUP,
+            Identifier.of(AHDECraft.MOD_ID, "ahdecraft_compat_group"),
+            FabricItemGroup.builder().icon(() -> new ItemStack(ModItems.RED_DIAMOND_SWORD))
+                    .displayName(Text.translatable("itemgroup.ahdecraft.ahdecraft_tools_group"))
+                    .entries((displayContext, entries) -> {
+                        entries.add(ModItems.RED_DIAMOND_SWORD);
                     }).build());
 
     public static void registerItemGroups() {

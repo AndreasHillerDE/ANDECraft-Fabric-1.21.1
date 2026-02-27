@@ -54,5 +54,10 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.PERIDOT, Models.GENERATED);
         itemModelGenerator.register(ModItems.RUBY, Models.GENERATED);
         itemModelGenerator.register(ModItems.SAPPHIRE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.RED_DIAMOND_AXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.RED_DIAMOND_PICKAXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.RED_DIAMOND_SHOVEL, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.RED_DIAMOND_HOE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.RED_DIAMOND_SWORD, Models.HANDHELD);
     }
 }

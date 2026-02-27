@@ -1,6 +1,7 @@
 package de.andreashiller.ahdecraft.datagen;
 
 import de.andreashiller.ahdecraft.block.ModBlocks;
+import de.andreashiller.ahdecraft.util.ModTags;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
 import net.minecraft.registry.RegistryWrapper;
@@ -62,6 +63,9 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.RED_COAL_DEEPSLATE_ORE)
                 .add(ModBlocks.RED_COAL_NETHER_ORE)
                 .add(ModBlocks.RED_COAL_BLOCK);
+
+        getOrCreateTagBuilder(ModTags.Blocks.NEEDS_RED_DIAMOND_TOOL)
+                .addTag(BlockTags.NEEDS_IRON_TOOL);
 
     }
 }

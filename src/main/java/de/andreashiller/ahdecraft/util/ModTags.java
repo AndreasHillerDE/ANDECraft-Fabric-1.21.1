@@ -11,6 +11,9 @@ public class ModTags {
 
     public static class Blocks {
 
+        public static final TagKey<Block> NEEDS_RED_DIAMOND_TOOL = createTag("needs_red_diamond_tool");
+        public static final TagKey<Block> INCORRECT_FOR_RED_DIAMOND_TOOL = createTag("incorrect_for_red_diamond_tool");
+
         private static TagKey<Block> createTag(String name) {
            return TagKey.of(RegistryKeys.BLOCK, Identifier.of(AHDECraft.MOD_ID, name));
         }

@@ -1,6 +1,8 @@
 {
   "itemgroup.ahdecraft.ahdecraft_item_group": "AHDECraft Items",
-  "itemgroup.ahdecraft.ahdecraft_block_group": "AHDECraft Blocks",
+  "itemgroup.ahdecraft.ahdecraft_block_group": "AHDECraft Building Blocks and Ores",
+  "itemgroup.ahdecraft.ahdecraft_tools_group": "AHDECraft Tools (Pickaxes and this stuff)",
+  "itemgroup.ahdecraft.ahdecraft_compat_group": "AHDECraft Compat (Swords and Armor)",
 
   "item.ahdecraft.red_diamond": "Red Diamond",
   "item.ahdecraft.red_diamond_ingot": "Red Diamond Ingot",
@@ -12,6 +14,11 @@
   "item.ahdecraft.peridot": "Peridot",
   "item.ahdecraft.ruby": "Ruby",
   "item.ahdecraft.sapphire": "Sapphire",
+  "item.ahdecraft.red_diamond_axe": "Red Diamond Axe",
+  "item.ahdecraft.red_diamond_pickaxe": "Red Diamond Pickaxe",
+  "item.ahdecraft.red_diamond_shovel": "Red Diamond Shovel",
+  "item.ahdecraft.red_diamond_hoe": "Red Diamond Hoe",
+  "item.ahdecraft.red_diamond_sword": "Red Diamond Sword",
 
   "block.ahdecraft.red_diamond_block": "Red Diamond Block",
   "block.ahdecraft.red_diamond_ore": "Red Diamond Ore",
